@@ -18,8 +18,6 @@ implementation
 function CreateMyClassInstance: TMyClass; external 'dll.dll';
 procedure FreeMyClassInstance; external 'dll.dll';
 
-{ TMyClass }
-
 initialization
   FmyClassInstance := CreateMyClassInstance;
 
