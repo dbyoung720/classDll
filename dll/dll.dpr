@@ -4,10 +4,7 @@ library dll;
 {$RTTI EXPLICIT METHODS([]) PROPERTIES([]) FIELDS([])}
 {$IFEND}
 
-uses
-  Vcl.Dialogs,
-  System.SysUtils,
-  System.Classes;
+uses Vcl.Dialogs, System.SysUtils, System.Classes;
 
 {$R *.res}
 
@@ -21,11 +18,11 @@ type
     function testB(const I, J: Integer): Integer; virtual;
   end;
 
-  { TMyClass }
+{ TMyClass }
 
 constructor TMyClass.Create;
 begin
-  FstrCaption := 'Test Dll Class';
+  FstrCaption := 'Test Delphi Dll Class';
 end;
 
 procedure TMyClass.testA(const strTip: string);
